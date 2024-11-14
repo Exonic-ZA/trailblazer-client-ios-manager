@@ -19,7 +19,7 @@ struct VehicleTrackerViewModel {
     }
     
     var deviceIdentifier: String? {
-        UserDefaults.standard.string(forKey: "device_id_preference")!
+        UserDefaults.standard.string(forKey: "device_id_preference") ?? ""
     }
     
     var serverURL: String? {
