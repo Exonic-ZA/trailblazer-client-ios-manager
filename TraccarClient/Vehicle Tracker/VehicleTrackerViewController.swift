@@ -19,6 +19,8 @@ class VehicleTrackerViewController: UIViewController {
     @IBOutlet weak var settingsView: UIView!
     @IBOutlet weak var settings: UIButton!
     
+    @IBOutlet weak var logoView: UIImageView!
+    
     var viewModel: VehicleTrackerViewModel?
     var settingsViewController = SettingsViewController()
     
@@ -67,6 +69,7 @@ class VehicleTrackerViewController: UIViewController {
         clockInAndOut.setImage(UIImage(systemName: "play.fill"), for: .normal)
         
         settingsView.layer.cornerRadius = settingsView.frame.height / 2
+        logoView.layer.cornerRadius = 16
     }
 
     @IBAction func clockInOrOut(_ sender: UIButton) {
